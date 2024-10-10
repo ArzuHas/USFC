@@ -53,6 +53,7 @@ Computes minimum cost routes and route-specific matrices.
 Saves the computed matrices in .mat files and .edge format for further analysis.
 
 Output Files
+
 .mat Files:
 
 FC_Matrices_FDR_corrected_90AAL: Functional connectivity matrices.
@@ -62,6 +63,7 @@ Distance_CMs_AAL_adult_90AAL.mat: Distance matrix.
 Cost_Route_all_Matrix.mat: All route costs and routes.
 Route*_Matrix.mat: Route-specific matrices.
 USFC_Matrix.mat, USFC_Matrix_abs.mat, USFC_Route_count_Matrix.mat: USFC matrices and route counts.
+
 .edge Files:
 
 SC_M*.edge, FC_M*.edge, USFC.edge, USFC_abs.edge, Route_counted.edge: Connectivity matrices in edge format.
