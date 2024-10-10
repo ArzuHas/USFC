@@ -26,6 +26,7 @@ For each subject:
 Loads FC and SC matrices.
 Calculates minimum cost routes and saves matrices related to connectivity and route-specific data.
 Saves the final matrices in edge file format for further analysis.
+
 Usage
 
 Set File Paths:
