@@ -6,7 +6,9 @@ MATLAB (R2021b or later recommended)
 Required MATLAB toolboxes and functions:
 niftiread (for NIfTI file reading)
 Custom functions: importSubjIDs, saveAsEdge
+
 Script Description
+
 Constants Definition:
 
 num_aal: Number of brain regions based on the atlas being used.
@@ -39,7 +41,6 @@ AAL_ind_116to90.mat: Atlas with AAL regions compressed to 90 regions.
 Functional and structural connectivity matrices for each subject.
 
 Center of Mass Calculation:
-
 Computes the center of mass for each brain region based on the AAL atlas.
 Saves results to CMs_AAL_adult_90AAL.mat.
 
@@ -47,7 +48,6 @@ Distance Matrix Calculation:
 Computes distance matrices based on center of mass data and saves them to Distance_CMs_AAL_adult_90AAL.mat.
 
 Processing Each Subject:
-
 Loads FC and SC matrices for each subject.
 Computes minimum cost routes and route-specific matrices.
 Saves the computed matrices in .mat files and .edge format for further analysis.
