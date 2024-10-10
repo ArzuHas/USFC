@@ -10,7 +10,7 @@ outputpath = fullfile('path_to_output_directory');  % Replace with appropriate p
 % FC = functional connectivity
 
 % Load necessary data as .mat file
-load('AAL_ind_116to90.mat'); % update index (ind): Here we which is AAL atlas compressed to 90 investigated regions such removing cerebellum and vermis from the atlas
+load('AAL_ind_116to90.mat'); % update index (ind): AAL atlas compressed to 90 investigated regions such removing cerebellum and vermis from the atlas
 
 % Import subject IDs with both FC and SC matrices
 subjects_both = importSubjIDs(fullfile(listpath, 'HCP_1200_list_both_fmask.txt')); %replace with appropriate file name for subject list
