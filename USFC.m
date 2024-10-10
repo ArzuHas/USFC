@@ -19,7 +19,7 @@ num_s = length(subjects_both);
 % Load or compute center of mass and distance matrices
 outfile1 = 'CMs_AAL_adult_90AAL.mat'; %replace with the atlas specific indices
 if ~exist(outfile1, 'file')
-    AAL_data = niftiread('AAL.nii'); % replace with approproate atlas image that is aimed to be used 
+    AAL_data = niftiread('AAL.nii'); % replace with appropriate atlas image that is aimed to be used 
     ROIs = unique(AAL_data);
     ROIs(ROIs == 0) = []; % remove background
     CMs = zeros(length(ROIs), 3);
