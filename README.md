@@ -11,12 +11,13 @@ Constants Definition:
 
 num_aal: Number of brain regions based on the atlas being used.
 listpath, datapath, outputpath: File paths for subject lists, FC matrices, and output directory, respectively.
+
 Data Loading:
-
 Loads AAL atlas indices and functional and structural connectivity matrices.
-Center of Mass and Distance Calculation:
 
+Center of Mass and Distance Calculation:
 Computes and saves the center of mass and distance matrices for the AAL atlas regions.
+
 Main Computation Loop:
 
 For each subject:
@@ -24,29 +25,33 @@ Loads FC and SC matrices.
 Calculates minimum cost routes and saves matrices related to connectivity and route-specific data.
 Saves the final matrices in edge file format for further analysis.
 Usage
+
 Set File Paths:
-
 Update listpath, datapath, outputpath, and other file paths in the script with the actual paths to your data directories and files.
-Run the Script:
 
+Run the Script:
 Execute the script in MATLAB. The script will process data for each subject listed in the provided file and save the results in the specified output directories.
 Detailed Steps
+
 Loading Data:
 
 AAL_ind_116to90.mat: Atlas with AAL regions compressed to 90 regions.
 Functional and structural connectivity matrices for each subject.
+
 Center of Mass Calculation:
 
 Computes the center of mass for each brain region based on the AAL atlas.
 Saves results to CMs_AAL_adult_90AAL.mat.
-Distance Matrix Calculation:
 
+Distance Matrix Calculation:
 Computes distance matrices based on center of mass data and saves them to Distance_CMs_AAL_adult_90AAL.mat.
+
 Processing Each Subject:
 
 Loads FC and SC matrices for each subject.
 Computes minimum cost routes and route-specific matrices.
 Saves the computed matrices in .mat files and .edge format for further analysis.
+
 Output Files
 .mat Files:
 
